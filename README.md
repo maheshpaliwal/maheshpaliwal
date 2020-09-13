@@ -1,9 +1,5 @@
-### Hi there 👋
+### Hi there! Welcome to my github world! 👋
 
-<!--
-**maheshpaliwal/maheshpaliwal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ... Webrtc
 - 🌱 I’m currently learning ... React.js
@@ -13,4 +9,4 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ... [Website](http://www.swapcode.in)
 - 😄 Pronouns: ... He/Him
 - ⚡ Fun fact: ... I am a blogger
--->
+
