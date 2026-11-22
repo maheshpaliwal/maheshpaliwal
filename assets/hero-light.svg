@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" role="img" aria-label="Mahesh Paliwal — SDE-3 at Zomato · 6+ years building scalable systems">
+<title>Mahesh Paliwal — SDE-3 at Zomato · 6+ years building scalable systems</title>
+<defs>
+  <clipPath id="clip"><rect width="960" height="320" rx="20"/></clipPath>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#dde3ea"/></pattern>
+  <linearGradient id="fade" x1="0" x2="1"><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient>
+  <mask id="m"><rect width="960" height="320" fill="url(#fade)"/></mask>
+  <radialGradient id="g1"><stop offset="0" stop-color="#0f766e" stop-opacity="0.12"/><stop offset="1" stop-color="#0f766e" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2"><stop offset="0" stop-color="#2563eb" stop-opacity="0.12"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+  .pulse{animation:pulse 2.4s ease-in-out infinite}
+  .drift{animation:drift 14s ease-in-out infinite alternate}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  @keyframes drift{to{transform:translate(-50px,24px)}}
+  @media (prefers-reduced-motion:reduce){.pulse,.drift{animation:none}.pkt{display:none}}
+</style>
+<g clip-path="url(#clip)">
+  <rect width="960" height="320" fill="#ffffff"/>
+  <rect width="960" height="320" fill="url(#dots)" mask="url(#m)"/>
+  <circle class="drift" cx="800" cy="60" r="260" fill="url(#g1)"/>
+  <circle class="drift" cx="560" cy="330" r="220" fill="url(#g2)" style="animation-delay:-6s"/>
+
+  <g>
+    <circle cx="62" cy="71" r="4.5" fill="#0f766e" class="pulse"/>
+    <text x="78" y="76" class="mono" font-size="15" fill="#57606a">currently building golb</text>
+  </g>
+  <text x="54" y="150" class="sans" font-size="60" font-weight="700" letter-spacing="-1.8" fill="#0f172a">Mahesh Paliwal</text>
+  <text x="56" y="194" class="sans" font-size="20" fill="#57606a">SDE-3 at Zomato · 6+ years building scalable systems</text>
+  <g><rect x="56" y="232" width="48" height="32" rx="16" fill="#f6f8fa" stroke="#d0d7de"/><text x="80.0" y="253" text-anchor="middle" class="mono" font-size="15" fill="#57606a">Go</text><rect x="114" y="232" width="94" height="32" rx="16" fill="#f6f8fa" stroke="#d0d7de"/><text x="161.0" y="253" text-anchor="middle" class="mono" font-size="15" fill="#57606a">Node.js</text><rect x="218" y="232" width="85" height="32" rx="16" fill="#f6f8fa" stroke="#d0d7de"/><text x="260.5" y="253" text-anchor="middle" class="mono" font-size="15" fill="#57606a">WebRTC</text><rect x="313" y="232" width="67" height="32" rx="16" fill="#f6f8fa" stroke="#d0d7de"/><text x="346.5" y="253" text-anchor="middle" class="mono" font-size="15" fill="#57606a">Rust</text></g>
+
+  <g>
+    <path d="M650,160 L734,160" stroke="#c4ccd6" stroke-width="1.5" stroke-dasharray="3 5"/>
+    <path d="M760,160 C830,160 808,76 872,76" fill="none" stroke="#c4ccd6" stroke-width="1.5"/><path d="M760,160 C830,160 808,160 872,160" fill="none" stroke="#c4ccd6" stroke-width="1.5"/><path d="M760,160 C830,160 808,244 872,244" fill="none" stroke="#c4ccd6" stroke-width="1.5"/>
+    <circle r="3.5" fill="#2563eb" class="pkt"><animateMotion dur="1.6s" repeatCount="indefinite" path="M650,160 L734,160"/></circle>
+    <circle r="3.5" fill="#0f766e" class="pkt"><animateMotion dur="2.4s" begin="0s" repeatCount="indefinite" path="M760,160 C830,160 808,76 872,76"/></circle><circle r="3.5" fill="#0f766e" class="pkt"><animateMotion dur="2.0s" begin="0.7s" repeatCount="indefinite" path="M760,160 C830,160 808,160 872,160"/></circle><circle r="3.5" fill="#0f766e" class="pkt"><animateMotion dur="2.8s" begin="1.3s" repeatCount="indefinite" path="M760,160 C830,160 808,244 872,244"/></circle>
+    <rect x="872" y="60" width="32" height="32" rx="9" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/><circle cx="888" cy="76" r="3.5" fill="#0f766e" class="pulse" style="animation-delay:0.0s"/><rect x="872" y="144" width="32" height="32" rx="9" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/><circle cx="888" cy="160" r="3.5" fill="#0f766e" class="pulse" style="animation-delay:0.5s"/><rect x="872" y="228" width="32" height="32" rx="9" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/><circle cx="888" cy="244" r="3.5" fill="#0f766e" class="pulse" style="animation-delay:1.0s"/>
+    <circle cx="760" cy="160" r="26" fill="#f6f8fa" stroke="#0f766e" stroke-width="1.5"/>
+    <path d="M751,160 h8 m0,0 l9,-8 m-9,8 h10 m-10,0 l9,8" fill="none" stroke="#0f766e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</g>
+<rect x=".5" y=".5" width="959" height="319" rx="19.5" fill="none" stroke="#d0d7de"/>
+</svg>

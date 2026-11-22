@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 150" role="img" aria-label="agentic-test-session: Session-scoped tracing and data-mutation capture for test environments.">
+<title>agentic-test-session</title>
+<style>.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}</style>
+<rect x=".5" y=".5" width="479" height="149" rx="13.5" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M24,31 v-7 a2,2 0 0 1 2,-2 h5 l2,2.5 h7 a2,2 0 0 1 2,2 v9.5 a2,2 0 0 1 -2,2 h-14 a2,2 0 0 1 -2,-2 z" fill="none" stroke="#0f766e" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="52" y="38" class="mono" font-size="17" font-weight="600" fill="#0f172a">agentic-test-session</text>
+<path d="M444,26 h10 v10 M454,26 l-11,11" fill="none" stroke="#57606a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="24" y="74" class="sans" font-size="14.5" fill="#57606a">Session-scoped tracing and data-mutation</text><text x="24" y="95" class="sans" font-size="14.5" fill="#57606a">capture for test environments.</text>
+<circle cx="30" cy="124" r="5" fill="#00ADD8"/>
+<text x="42" y="129" class="sans" font-size="13" fill="#57606a">Go</text>
+</svg>
