@@ -16,12 +16,18 @@ THEMES = {
 # ---- content -----------------------------------------------------------------
 NAME = "Mahesh Paliwal"
 ROLE = "SDE-3 at Zomato · 6+ years building scalable systems"
-STATUS = "currently building golb"
+STATUS = "currently building golb · tsession"
 CHIPS = ["Go", "Node.js", "WebRTC", "Rust"]
 CARDS = {
     "golb": ("golb", ["A load balancer in a single static binary:", "HTTP reverse proxy and TCP proxy, one YAML file."], "Go", "#00ADD8"),
     "tsession": ("agentic-test-session", ["Session-scoped tracing and data-mutation", "capture for test environments."], "Go", "#00ADD8"),
 }
+SKILLS = [
+    ("languages", ["Go", "Node.js", "Rust"]),
+    ("data", ["DynamoDB", "MySQL", "PostgreSQL", "Redis"]),
+    ("infra", ["Kafka", "AWS", "WebRTC"]),
+    ("craft", ["System design", "Problem solving"]),
+]
 # ------------------------------------------------------------------------------
 
 
@@ -115,7 +121,35 @@ def card(t, title, lines, lang, lang_color):
 '''
 
 
+def skills(t):
+    row_h, top = 50, 26
+    h = top * 2 + row_h * len(SKILLS) - 14
+    rows = []
+    for i, (label, items) in enumerate(SKILLS):
+        y = top + i * row_h
+        rows.append(f'<text x="30" y="{y + 23}" class="mono" font-size="13" letter-spacing="1.2" fill="{t["accent"]}">{label.upper()}</text>')
+        x = 170
+        for it in items:
+            w = round(len(it) * 9.1 + 32)
+            rows.append(
+                f'<rect x="{x}" y="{y}" width="{w}" height="36" rx="18" fill="{t["bg2"]}" stroke="{t["border"]}"/>'
+                f'<text x="{x + w / 2}" y="{y + 23}" text-anchor="middle" class="mono" font-size="15" fill="{t["ink"]}">{it}</text>'
+            )
+            x += w + 10
+        if i:
+            rows.append(f'<path d="M30,{y - 7.5} H810" stroke="{t["border"]}" stroke-dasharray="2 6"/>')
+    label = "; ".join(f"{l}: {', '.join(v)}" for l, v in SKILLS)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 {h}" role="img" aria-label="Skills — {label}">
+<title>Skills</title>
+<style>.mono{{font-family:{MONO}}}</style>
+<rect x=".5" y=".5" width="839" height="{h - 1}" rx="13.5" fill="{t["bg"]}" stroke="{t["border"]}"/>
+{"".join(rows)}
+</svg>
+'''
+
+
 for name, t in THEMES.items():
+    (OUT / f"skills-{name}.svg").write_text(skills(t))
     (OUT / f"hero-{name}.svg").write_text(hero(t))
     for slug, args in CARDS.items():
         (OUT / f"card-{slug}-{name}.svg").write_text(card(t, *args))

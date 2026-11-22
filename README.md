@@ -16,9 +16,17 @@
 #### Now
 
 - Building [**golb**](https://github.com/maheshpaliwal/golb), a load balancer in Go.
+- Building [**agentic-test-session**](https://github.com/maheshpaliwal/agentic-test-session) (tsession): start a session, exercise your Go services, stop it, and see what ran, in what order across services, and what data each write changed. Made for test environments.
 - Working with WebRTC, and open to collaborating on it.
 - Learning Rust.
 - Ask me about Go and Node.js.
+
+#### Skills
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/skills-dark.svg">
+  <img src="assets/skills-light.svg" width="100%" alt="Skills — Languages: Go, Node.js, Rust. Data: DynamoDB, MySQL, PostgreSQL, Redis. Infra: Kafka, AWS, WebRTC. Craft: system design, problem solving.">
+</picture>
 
 #### Building
 
@@ -36,5 +44,3 @@
     </picture>
   </a>
 </p>
-
-<sub>Earlier: <a href="https://github.com/maheshpaliwal/vsrwm">vsrwm</a>, a Kotlin library for video size reduction, screen recording and watermarking.</sub>

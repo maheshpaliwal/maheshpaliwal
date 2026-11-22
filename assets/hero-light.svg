@@ -24,7 +24,7 @@
 
   <g>
     <circle cx="62" cy="71" r="4.5" fill="#0f766e" class="pulse"/>
-    <text x="78" y="76" class="mono" font-size="15" fill="#57606a">currently building golb</text>
+    <text x="78" y="76" class="mono" font-size="15" fill="#57606a">currently building golb · tsession</text>
   </g>
   <text x="54" y="150" class="sans" font-size="60" font-weight="700" letter-spacing="-1.8" fill="#0f172a">Mahesh Paliwal</text>
   <text x="56" y="194" class="sans" font-size="20" fill="#57606a">SDE-3 at Zomato · 6+ years building scalable systems</text>
