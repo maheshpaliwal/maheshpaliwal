@@ -25,7 +25,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/skills-dark.svg">
-  <img src="assets/skills-light.svg" width="100%" alt="Skills — Languages: Go, Node.js, Python, Rust. Data: DynamoDB, MySQL, PostgreSQL, Redis, Pinot. Infra: Kafka, AWS, Kubernetes, WebRTC. Craft: system design, problem solving.">
+  <img src="assets/skills-light.svg" width="100%" alt="Skills — Languages: Go, Node.js, Python, Rust. Data: DynamoDB, MySQL, PostgreSQL, Redis, Pinot. Infra: Kafka, AWS, Docker, Kubernetes, WebRTC. Craft: system design, problem solving.">
 </picture>
 
 #### Building
