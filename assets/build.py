@@ -25,7 +25,7 @@ CARDS = {
 SKILLS = [
     ("languages", ["Go", "Node.js", "Python", "Rust"]),
     ("data", ["DynamoDB", "MySQL", "PostgreSQL", "Redis", "Pinot"]),
-    ("infra", ["Kafka", "AWS", "WebRTC"]),
+    ("infra", ["Kafka", "AWS", "Kubernetes", "WebRTC"]),
     ("craft", ["System design", "Problem solving"]),
 ]
 # ------------------------------------------------------------------------------
