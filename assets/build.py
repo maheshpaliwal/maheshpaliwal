@@ -23,7 +23,7 @@ CARDS = {
     "tsession": ("agentic-test-session", ["Session-scoped tracing and data-mutation", "capture for test environments."], "Go", "#00ADD8"),
 }
 SKILLS = [
-    ("languages", ["Go", "Node.js", "Rust"]),
+    ("languages", ["Go", "Node.js", "Python", "Rust"]),
     ("data", ["DynamoDB", "MySQL", "PostgreSQL", "Redis"]),
     ("infra", ["Kafka", "AWS", "WebRTC"]),
     ("craft", ["System design", "Problem solving"]),
