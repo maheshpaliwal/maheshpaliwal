@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Generates the SVGs used by the profile README. Run: python3 assets/build.py"""
+"""Generates the SVGs used by the profile README. Run: python3 assets/build.py (also updates README.md image links)"""
+import hashlib
+import re
 from pathlib import Path
 
 OUT = Path(__file__).parent
@@ -148,9 +150,23 @@ def skills(t):
 '''
 
 
+# File names carry a content hash so GitHub's image cache never serves a stale
+# version: a changed image gets a new URL, and the README is rewritten to match.
+files = {}
 for name, t in THEMES.items():
-    (OUT / f"skills-{name}.svg").write_text(skills(t))
-    (OUT / f"hero-{name}.svg").write_text(hero(t))
+    files[f"skills-{name}"] = skills(t)
+    files[f"hero-{name}"] = hero(t)
     for slug, args in CARDS.items():
-        (OUT / f"card-{slug}-{name}.svg").write_text(card(t, *args))
-print("wrote", len(list(OUT.glob("*.svg"))), "svgs")
+        files[f"card-{slug}-{name}"] = card(t, *args)
+
+for old in OUT.glob("*.svg"):
+    old.unlink()
+readme = OUT.parent / "README.md"
+md = readme.read_text()
+for stem, svg in files.items():
+    fname = f"{stem}.{hashlib.sha1(svg.encode()).hexdigest()[:8]}.svg"
+    (OUT / fname).write_text(svg)
+    md, n = re.subn(rf"assets/{re.escape(stem)}(\.[0-9a-f]{{8}})?\.svg", f"assets/{fname}", md)
+    assert n, f"README does not reference {stem}"
+readme.write_text(md)
+print("wrote", len(files), "svgs")
